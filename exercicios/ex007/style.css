@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+body{
+    background-image: linear-gradient(to left, #4C5958, #BFBFBF);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+div {
+    
+    background-color: lightgray;
+    text-align: center;
+    height: 50px;
+    width: 90px;
+    padding: 50px 10px 50px 10px;
+    border-radius: 50%;
+    border: 10px solid gray;
+    margin: auto;
+    box-shadow: 5px 4px 0px 0px rgba(0, 0, 0, 0.445);
+    
+    
+    
+}
+
+div > p {
+    display: none;
+}
+
+div:hover > p{
+    display: block;
+}
+
+.cr7:hover {
+    background-color: yellow;
+}
+
+.m10:hover {
+    background-color: pink;
+}
+
+.vr7:hover {
+    background-color: white;
+}
+
+
+
+

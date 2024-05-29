@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+@font-face {
+     
+        font-family: "Light Stories";
+        src: url("fontes/Light Stories.otf") format("opentype"), url("fontes/Light Stories.ttf") format("truetype");
+    }
+
+    body {
+        font-family: "Light Stories";
+    }
+
+    h1, h2 {
+        font-family: "Poetsen One";
+    }
