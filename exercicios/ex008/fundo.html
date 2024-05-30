@@ -4,15 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste de imagem de fundo</title>
+    <style>
+        div {
+            background-color: aqua;
+            border: 1px solid black;
+            display: inline-block;
+            border-radius: 10px;
+            width: 300px;
+            height: 300px;
+        }
+
+        #q1 {
+            background-image: linear-gradient(to top, blue, rgb(150, 202, 223));
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #q2 {
+            background-image: url(imagens/pattern001.png);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #q3 {
+            background-image: url(imagens/wallpaper002.jpg);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(50%, -50%);
+        }
+
+        body {
+            background-image: url(imagens/wallpaper001.jpg);
+        }
+    </style>
 </head>
 <body>
-    <div>
+    <div id="q1">
         
     </div>
-    <div>
+    <div id="q3">
 
     </div>
-    <div>
+    <div id="q2">
 
     </div>
 </body>
