@@ -9,7 +9,7 @@ header {
     font-size: 1.5em;
     font-weight: bold;
     padding: 10px;
-    margin: -9px;
+    margin: -8px;
     margin-bottom: 10px;
 }
 
@@ -32,11 +32,18 @@ main {
     font-weight: bold;
 }
 
+main > pre {
+    white-space: pre-line;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
 footer {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 5px;
+    padding: 1px;
+    margin: -8px;
 }
 
 footer > a:hover {
