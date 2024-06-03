@@ -20,6 +20,7 @@ header > p {
 
 a {
     color: white;
+    font-weight: bolder;
     text-decoration: none;
 }
 
@@ -30,6 +31,34 @@ a:hover {
 main {
     font-family: "Comic Neue";
     font-weight: bold;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10hv;
+    line-height: 2em;
+}
+
+.imagem > p {
+    background-color: rgba(128, 128, 128, 0.493);
+    width: 400px;
+}
+
+.imagem {
+    background-color: black;
+    color: white;
+}
+
+.moist > p {
+    background-color: rgba(128, 128, 128, 0.466);
+    width: 400px;
+}
+
+.moist {
+    background-color: black;
+    color: white;
 }
 
 main > pre {
@@ -48,5 +77,4 @@ footer {
 
 footer > a:hover {
     text-decoration: underline;
-    color: grey;
 }
