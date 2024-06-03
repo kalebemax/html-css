@@ -13,6 +13,10 @@ header {
     margin-bottom: 10px;
 }
 
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 header > p {
     font-size: 0.8em;
     color: gray;
@@ -32,33 +36,56 @@ main {
     font-family: "Comic Neue";
     font-weight: bold;
     line-height: 2em;
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 section {
     padding-top: 10vh;
-    padding-bottom: 10hv;
+    padding-bottom: 10vh;
     line-height: 2em;
+    background-attachment: fixed;
 }
 
 .imagem > p {
-    background-color: rgba(128, 128, 128, 0.493);
-    width: 400px;
+    background-color: rgba(14, 13, 13, 0.493);
+    display: inline-block;
+    padding: 25px;
+   
 }
 
 .imagem {
     background-color: black;
     color: white;
+    margin-left: -30px;
+    margin-right: -8px;
 }
 
 .moist > p {
-    background-color: rgba(128, 128, 128, 0.466);
-    width: 400px;
+    background-color: rgba(0, 0, 0, 0.486);
+    display: inline-block;
+    padding: 25px;
 }
 
 .moist {
     background-color: black;
     color: white;
+    text-shadow: 1px 1px 0px black;
+    margin-left: -30px;
+    margin-right: -8px;
+}
+
+#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-size: cover;
+    background-position: center right;
+   
+}
+
+#img02 {
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
+    background-position: center right;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.514);
 }
 
 main > pre {
