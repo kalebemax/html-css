@@ -5,64 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas Maiores</title>
     <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
         table {
             height: 500px;
             width: 500px;
             border-collapse: collapse;
         }
 
+        caption {
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+            font-size: 1.3em;
+            padding: 10px;
+        }
+
+        thead  {
+            position: sticky;
+            top: -1px;
+}
+
         thead, tfoot {
             background-color: blue;
             color: white;
+            text-align: center;
         }
 
         td, tr {
             border: 1px solid black;
             padding: 10px;
         }
+
+        tbody > tr:nth-child(2n) {
+            background-color: grey;
+        }
+
+        .right {
+            text-align: right;
+        }
+        
+        
     </style>
 </head>
 <body>
     <table>
+        <caption>Artilherios da Liga dos Campeões 23/24</caption>
         <thead>
             <tr>
-                <td>Artilheiros</td>
-                <td>Gols</td>
+                <th scope="col">Artilheiros</th>
+                <th scope="col">Gols</th>
             </tr>
         </thead>
         <tbody>
             <tr>
             <td>Mbappé</td>
-            <td>8</td>
+            <td class="right">8</td>
             </tr>
             <tr>
                 <td>Harry Kane</td>
-                <td>8</td>
+                <td class="right">8</td>
             </tr>
             <tr>
                 <td>Vinicius Júnior</td>
-                <td>6</td>
+                <td class="right">6</td>
             </tr>
             <tr>
                 <td>Griezmann</td>
-                <td>6</td>
+                <td class="right">6</td>
             </tr>
             <tr>
                 <td>Haaland</td>
-                <td>6</td>
+                <td class="right">6</td>
             </tr>
             <tr>
                 <td>Rodrygo</td>
-                <td>5</td>
+                <td class="right">5</td>
+            </tr>
+            <tr>
+                <td>Joselu</td>
+                <td class="right">5</td>
+            </tr>
+            <tr>
+                <td>Foden</td>
+                <td class="right">5</td>
+            </tr>
+            <tr>
+                <td>Álvarez</td>
+                <td class="right">5</td>
+            </tr>
+            <tr>
+                <td>Bellingham</td>
+                <td class="right">4</td>
             </tr>
             
         <tfoot>
             <tr>
-                <td>Total de Gols Marcados</td>
-                <td>40</td>
+                <th scope="row">Total de Gols Marcados</th>
+                <td class="right">40</td>
             </tr>
         </tfoot>
         </tbody>
     </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque blanditiis velit temporibus corrupti est. Esse, culpa velit? Quod, ex at. Et, ipsum. Perspiciatis praesentium eaque deserunt velit ipsum fugiat beatae?. Lorem ipsum dolor sit amet consectetur adipisicing elit. At molestiae maxime officiis deleniti aliquid a expedita architecto dolorem fuga dignissimos, aspernatur laudantium atque, in iste est omnis commodi illum suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sequi aperiam non numquam! Aliquid nesciunt eligendi quasi soluta omnis, quos itaque numquam neque? Officia magnam, quas nihil soluta corporis hic.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, perspiciatis voluptatibus doloremque earum maiores repellat accusantium nemo reiciendis eligendi molestias minus labore delectus itaque assumenda sequi, ut facere, ipsam est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, itaque pariatur corporis aut ipsam dolore fugit officiis quidem dolorum, delectus laudantium quibusdam sit quos, doloribus illo aperiam maiores eaque ex. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident eaque nostrum nemo quasi molestias ex deleniti culpa delectus porro? Cumque dicta atque explicabo optio cum, blanditiis possimus deleniti minus consectetur!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iure eveniet nostrum accusamus autem assumenda quo deserunt amet id animi earum, veniam aut natus dolorum consequatur odit minima a dignissimos.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus animi ratione illum blanditiis voluptate repellendus tempore ipsa a, at aut suscipit natus accusamus alias, debitis deleniti modi quasi vel consequatur?. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae molestiae quasi totam. Iste quibusdam id, reprehenderit perspiciatis tempora et magni quae non voluptatum, eligendi neque possimus expedita maxime hic ullam!. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sit repellat saepe maiores illo ex omnis maxime? Modi, blanditiis excepturi. Ratione fugit iste et sapiente minus recusandae laborum molestiae reiciendis?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse ipsa, odio fugit quas et sapiente dicta. Quaerat, voluptas modi. Temporibus praesentium ipsam expedita placeat provident velit quidem harum officia voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium obcaecati fuga voluptate! Quasi sed eius voluptatem quibusdam deserunt beatae ullam labore exercitationem cupiditate nemo ipsum, natus, inventore iste! Optio, officiis!. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, tempora illo tempore consequatur quos itaque est nesciunt laborum dolore voluptatum ipsa similique dignissimos! Quos porro accusamus deserunt recusandae velit culpa?. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique fugit dolorem voluptates ad? Omnis ipsam adipisci quisquam illum est. Similique consequuntur inventore itaque quae voluptatibus totam iusto dolorum id atque?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui esse sequi quos laborum provident corrupti cum, sit debitis corporis! Explicabo magnam aspernatur animi quibusdam voluptatem suscipit nostrum incidunt amet commodi?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nisi voluptas quam, quidem dolorum nihil perferendis aliquid quos atque aut eos voluptatum? Totam tempora, expedita nostrum vero laudantium voluptatum ipsa!. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus esse quibusdam consectetur animi obcaecati architecto, quo odio eligendi, reprehenderit magni fuga commodi non totam cum a quis ullam eum iste?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nobis nostrum, in ea nisi eum eveniet laborum soluta, quod consequuntur corporis libero culpa! Ut suscipit cumque doloremque vel exercitationem modi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa modi mollitia suscipit corrupti, exercitationem fuga adipisci quas iure voluptatem, a nobis eos dolores quam harum tempore commodi animi. Saepe, enim.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias nam placeat doloremque ad laudantium consectetur veritatis, eius inventore doloribus minima dicta fugiat rem! Fugit quis cupiditate voluptatum maiores perferendis amet?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cum dolorum placeat, expedita enim voluptates quos dolores a iusto incidunt! Molestiae quo adipisci fuga eum, non suscipit animi ex repellendus!</p>
 </body>
 </html>
