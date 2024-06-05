@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            height: 300px;
+            border: 1px solid;
+            border-collapse: collapse;
+            text-align: center;
+            color: white;
+        }
+
+        th, td {
+            border: 1px solid;
+            padding: 10px;
+        }
+
+        .destaque {
+            background-color: black;
+        }
+
+        .dest {
+            background-color: yellow;
+        }
+
+        .de {
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="destaque">
+            <col class="dest">
+            <col class="de">
+        </colgroup>
+        <thead>
+            <tr>
+            <th scope="col">1</th>
+            <th scope="col">2</th>
+            <th scope="col">3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>100</td>
+            <td>200</td>
+            <td>300</td>
+            </tr>
+            <tr>
+                <td>500</td>
+                <td>600</td>
+                <td>700</td>
+                <td>800</td>
+            </tr>
+            <tr>
+                <td>900</td>
+                <td>1000</td>
+                <td>1100</td>
+                <td>1200</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
