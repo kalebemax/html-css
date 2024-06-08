@@ -13,10 +13,10 @@
 <body>
     <h1>Meu Primeiro Formulário</h1>
     
-    <form method="post" action="cadastro.php">
-        <label for="inome">Nome: <input type="text" name="nome" id="inome" required maxlength="15" size="10"></label>
+    <form method="post" action="cadastro.php" autocomplete="on">
+        <label for="inome">Nome: <input type="text" name="nome" id="inome" required maxlength="15" size="10" autocomplete="name"></label>
         
-        <label for="isobrenome">Sobrenome: <input type="text" name="sobrenome" id="isobrenome" required maxlength="15" size="10"></label>
+        <label for="isobrenome">Sobrenome: <input type="text" name="sobrenome" id="isobrenome" required maxlength="15" size="10" autocomplete="family-name"></label>
         
         <label for="iusu">Usuário: <input type="text" name="usuário" id="iusu" required maxlength="15" size="10" autocomplete="username"></label>
 
