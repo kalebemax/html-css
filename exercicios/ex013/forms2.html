@@ -12,7 +12,7 @@
 </head>
 <body>
     <h1>Formulários</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <fieldset>
             <legend>Dados Pessoais</legend>
             
@@ -34,6 +34,12 @@
                 <label for="ite"><input type="checkbox" name="esp" id="ite">Tênis</label><br> 
                 <label for="ixad"><input type="checkbox" name="esp" id="ixad" checked>Xadrez</label><br> 
                 <label for="icor"><input type="checkbox" name="esp" id="icor">Corrida</label><br> 
+
+                <p><label for="ifoto">Foto de Identificação: <input type="file" name="foto" id="ifoto"></label></p>
+
+                <label for="icor">Cor Favorita: <input type="color" name="cor" id="icor"></label>
+
+                <p><label for="inivel">Nível de Satisfação: <input type="range" name="avaliação" id="inivel" min="1" max="10" value="5"></label></p>
 
         </fieldset>
         
