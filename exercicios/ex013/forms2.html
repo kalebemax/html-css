@@ -4,13 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
+    <style>
+        fieldset {
+           width: 700px;
+        }
+    </style>
 </head>
 <body>
     <h1>Formulários</h1>
-    <form action="cadastro.php" method="post" autocomplete="on">
-        <label for="inome">Nome: <input type="text" name="nome" id="inome" required minlength="10" maxlength="20" placeholder="Nome completo" autocomplete="name"></label>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            
+            <label for="inome">Nome: <input type="text" name="nome" id="inome" required minlength="10" maxlength="20" placeholder="Nome completo" autocomplete="name"></label>
+            
+            <label for="iemail">Email: <input type="email" name="email" id="iemail" autocomplete="email" required></label>
+            
+            <label for="itel">Telefone: <input type="tel" name="telefone" id="itel" autocomplete="tel" required placeholder="(xx)xxxx-xxxx" maxlength="15"></label>
+
+            <p>Sexo: 
+                <label for="isex"><input type="radio" name="sexo" id="isex" value="M" checked>Masculino</label>
+                
+                <label for="ifem"><input type="radio" name="sexo" id="ifem" value="F">Feminino</label></p>
+
+                <p>Esportes Favoritos:</p>
+
+                <label for="iesp"><input type="checkbox" name="esp" id="iesp" checked>Futebol</label><br>   
+                <label for="ibas"><input type="checkbox" name="esp" id="ibas">Basquete</label> <br>  
+                <label for="ite"><input type="checkbox" name="esp" id="ite">Tênis</label><br> 
+                <label for="ixad"><input type="checkbox" name="esp" id="ixad" checked>Xadrez</label><br> 
+                <label for="icor"><input type="checkbox" name="esp" id="icor">Corrida</label><br> 
+
+        </fieldset>
         
-        <p><label for="imedia">Média: <input type="number" name="média" id="imedia" min="1.0" max="10" step="0.1" value="6" autocomplete=""></label></p>
+        <p><label for="imedia">Média: <input type="number" name="média" id="imedia" min="1.0" max="10" step="0.1" value="6"></label></p>
 
         <label for="imes">Período Letivo: <input type="month" name="mes" id="imes" value="2024-06"></label>
         
