@@ -7,6 +7,7 @@
     <style>
         fieldset {
            width: 700px;
+           margin-bottom: 10px;
         }
     </style>
 </head>
@@ -35,23 +36,55 @@
                 <label for="ixad"><input type="checkbox" name="esp" id="ixad" checked>Xadrez</label><br> 
                 <label for="icor"><input type="checkbox" name="esp" id="icor">Corrida</label><br> 
 
+                <p>
+                    <label for="iest">Estado: </label>
+                    <select name="estado" id="iest">
+                        <option value=""selected>--- Escolha ---</option>
+                        <optgroup label="Região Sudeste">
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="MG">Minas Gerais</option>
+                        </optgroup>
+
+                        <optgroup label="Região Nordeste">
+                            <option value="RN" >Rio Grando do Norte</option>
+                            <option value="CE">Ceará</option>
+                            <option value="PB">Paraíba</option>
+                        </optgroup>
+                    </select>
+                </p>
+
+                <label for="iprof">Profissões: </label>
+                <input type="text" name="profs" id="iprof" autocomplete="work" list="listprof">
+                <datalist id="listprof">
+                    <option>Desenvolvedor</option>
+                    <option>Cozinheiro</option>
+                    <option>Carpinteiro</option>
+                    <option>Eletricista</option>
+                    <option>Professor</option>
+                    <option>Motorista</option>
+                </datalist>
+                
                 <p><label for="ifoto">Foto de Identificação: <input type="file" name="foto" id="ifoto"></label></p>
 
                 <label for="icor">Cor Favorita: <input type="color" name="cor" id="icor"></label>
 
                 <p><label for="inivel">Nível de Satisfação: <input type="range" name="avaliação" id="inivel" min="1" max="10" value="5"></label></p>
 
+                <label for="imsg">Mensagem: </label><br>
+                <textarea name="texto" id="imsg" cols="30" rows="5"></textarea>
+
         </fieldset>
         
-        <p><label for="imedia">Média: <input type="number" name="média" id="imedia" min="1.0" max="10" step="0.1" value="6"></label></p>
-
-        <label for="imes">Período Letivo: <input type="month" name="mes" id="imes" value="2024-06"></label>
-        
-        <p><label for="idata">Data da Prova: <input type="date" name="data" id="idata" value="2024-06-10"></label></p>
-
-        <label for="ihora">Horário da Prova: <input type="time" name="hora" id="ihora" value="12:39"></label>
-
-        <p>
+        <fieldset>
+            <legend>Informações da Prova</legend>
+            <p><label for="imedia">Média: <input type="number" name="média" id="imedia" min="1.0" max="10" step="0.1" value="6"></label></p>
+            <label for="imes">Período Letivo: <input type="month" name="mes" id="imes" value="2024-06"></label>
+            
+            <p><label for="idata">Data da Prova: <input type="date" name="data" id="idata" value="2024-06-10"></label></p>
+            <label for="ihora">Horário da Prova: <input type="time" name="hora" id="ihora" value="12:39"></label>
+            <p>
+        </fieldset>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar Tudo">
         </p>
