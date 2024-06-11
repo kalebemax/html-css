@@ -12,7 +12,7 @@
     </style>
 </head>
 <body>
-    <h1>Formulários</h1>
+    <h1>Aprendendo Input</h1>
     <form action="cadastro.php" method="post" autocomplete="on">
         <fieldset>
             <legend>Dados Pessoais</legend>
@@ -69,7 +69,10 @@
 
                 <label for="icor">Cor Favorita: <input type="color" name="cor" id="icor"></label>
 
-                <p><label for="inivel">Nível de Satisfação: <input type="range" name="avaliação" id="inivel" min="1" max="10" value="5"></label></p>
+                <p><label for="inivel">Nível de Satisfação: <input type="range" name="avaliação" id="inivel" min="1" max="10" value="5" oninput="ival.innerHTML = Number(inivel.value)"></label>
+                    <output id="ival">5</output>
+                
+                </p>
 
                 <label for="imsg">Mensagem: </label><br>
                 <textarea name="texto" id="imsg" cols="30" rows="5"></textarea>
