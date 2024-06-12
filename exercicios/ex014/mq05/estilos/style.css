@@ -1,17 +1,18 @@
 @charset "UTF-8";
 
 * {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
 }
 
 body {
-    background-color: rgb(184, 184, 184);
+    background-color: lightgray;
 }
 
 
 header {
-    background-color: darkgray;
+    background-color: gray;
 }
 
 header h1 {
@@ -21,29 +22,44 @@ header h1 {
 }
 
 menu li {
-    background-color: gray;
-    color: black;
+    background-color: rgb(87, 86, 86);
+    color: white;
+    list-style-type: none;
+    text-align: center;
     text-decoration: none;
-    font-size: 1.5em;
-    display: inline-block;
+    font-size: 1.3em;
+    display: block;
     margin: 5px;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+menu a {
+    text-decoration: none;
 }
 
 menu li:hover {
-    border: 1px solid black;
+    background-color: gray;
 }
 
 article {
     background-color: white;
-    width: 800px;
+    width: 90vw;
     border-radius: 10px;
     display: block;
     margin: auto;
     line-height: 1.3em;
     text-align: center;
+    text-indent: 20px;
 }
 
-article h2 {
-    margin: 10px;
-    text-align: left;
+article > p {
+    text-align: justify;
 }
+
+h2 {
+    text-align: left;
+    margin-top: 10px;
+    padding: 10px;
+}
+
