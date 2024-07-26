@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            background-color: beige;
+            height: 500px;
+            
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .item {
+            background-color: lightslategray;
+            color: white;
+            text-align: center;
+            border: 1px solid black;
+            height: 20px;
+            padding: 20px;
+        }
+
+        #od1 {
+            align-self: center;
+        }
+
+        #od2 {
+            
+        }
+
+        #od3 {
+            align-self: center;
+        }
+
+        #od4 {
+            align-self: flex-end;
+        }
+
+        #od5 {
+            
+        }
+
+        #od6 {
+            
+        }
+
+        #od7 {
+            align-self: stretch;
+        }
+
+        #od8 {
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    <div class="item" id="od1">
+        1
+    </div>
+    <div class="item" id="od2">
+        2
+    </div>
+    <div class="item" id="od3">
+        3
+    </div>
+    <div class="item" id="od4">
+        4
+    </div>
+    <div class="item" id="od5">
+        5
+    </div>
+    <div class="item" id="od6">
+        6
+    </div>
+    <div class="item" id="od7">
+        7
+    </div>
+    <div class="item" id="od8">
+        8
+    </div>
+    </div>
+</body>
+</html>
