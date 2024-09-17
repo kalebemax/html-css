@@ -22,6 +22,7 @@ header {
 
 h1 {
     margin: 10px;
+    flex: 0 0 150px;
 }
 
 li {
@@ -54,10 +55,10 @@ article {
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.274);
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
     header {
         display: flex;
-        flex-flow: row;
+        flex-flow: row wrap;
         justify-content: space-between;
         align-items: center;
 
